@@ -2,6 +2,7 @@
     "name": "alfredsorrow/brain-games",
     "description": "First Hexlet project",
     "bin": ["bin/brain-games"],
+    "version":"1.0.0",
     "authors": [
         {
             "name": "Alfred Sorrow",
