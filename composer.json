@@ -2,14 +2,14 @@
     "name": "alfredsorrow/brain-games",
     "description": "First Hexlet project",
     "bin": ["bin/brain-games"],
-    "version":"1.0.0",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Alfred Sorrow",
             "email": "kurtsorrow@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+    "wp-cli/php-cli-tools": "^v0.11.10"
 }
-
-
+}
