@@ -1,5 +1,5 @@
 {
-    "name": "AlfredSorrow/brain-games",
+    "name": "alfredsorrow/brain-games",
     "description": "First Hexlet project",
     "bin": ["bin/brain-games"],
     "authors": [
