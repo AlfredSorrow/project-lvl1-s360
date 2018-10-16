@@ -1,0 +1,15 @@
+{
+    "name": "alfdredsorrow/brain-games",
+    "description": "Firsth Hexlet project",
+    "bin": ["bin/brain-games"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alfred Sorrow",
+            "email": "kurtsorrow@gmail.com"
+        }
+    ],
+    "require": {}
+}
+
+
