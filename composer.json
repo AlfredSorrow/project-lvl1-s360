@@ -1,6 +1,6 @@
 {
-    "name": "alfdredsorrow/brain-games",
-    "description": "Firsth Hexlet project",
+    "name": "AlfdredSorrow/brain-games",
+    "description": "First Hexlet project",
     "bin": ["bin/brain-games"],
     "license": "MIT",
     "authors": [
