@@ -1,8 +1,7 @@
 {
-    "name": "AlfdredSorrow/brain-games",
+    "name": "AlfredSorrow/brain-games",
     "description": "First Hexlet project",
     "bin": ["bin/brain-games"],
-    "license": "MIT",
     "authors": [
         {
             "name": "Alfred Sorrow",
