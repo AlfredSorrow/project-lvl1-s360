@@ -2,9 +2,9 @@
     "name": "alfredsorrow/brain-games",
     "description": "First Hexlet project",
     "keywords": [
-        "phpunit",
-        "xunit",
-        "testing"
+        "Hexlet",
+        "Brain Games",
+        "Project"
     ],
     "bin": ["bin/brain-games"],
     "version": "1.0.0",
