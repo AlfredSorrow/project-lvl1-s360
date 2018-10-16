@@ -4,4 +4,4 @@ php:
 install:
   - make install
 
-script: make init
+script: make lint
