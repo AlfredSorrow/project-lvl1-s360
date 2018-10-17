@@ -2,7 +2,7 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 use function \BrainGames\Cli\run;
-use function \BrainGames\calc\calc;
+use function \BrainGames\Calc\calc;
 
 $gameDescription = 'What is the result of the expression?';
 $name = run($gameDescription);
