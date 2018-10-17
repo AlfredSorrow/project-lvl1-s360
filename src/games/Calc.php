@@ -1,5 +1,5 @@
 <?php
-namespace BrainGames\Calculate;
+namespace BrainGames\calc;
 use function \cli\line;
 use function \cli\prompt;
 use function \BrainGames\Engine\engine;
@@ -10,7 +10,7 @@ function operators()
     return $operator[array_rand($operator)];
 }
 
-function calculate($name)
+function calc($name)
 {
 
     $number1 = rand(1, 20);
@@ -29,5 +29,5 @@ function calculate($name)
     if ($engineAnswer !==true && $engineAnswer !== false ) {
         return;
     }
-    calculate($name);
+    calc($name);
 }

@@ -9,7 +9,7 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calculate"
+        "bin/brain-calc"
     ],
     "authors": [
         {
@@ -25,7 +25,7 @@
             "src/Cli.php",
             "src/Engine.php",
             "src/games/Even.php",
-            "src/games/Calculate.php"
+            "src/games/Cals.php"
         ]
     },
     "require": {
