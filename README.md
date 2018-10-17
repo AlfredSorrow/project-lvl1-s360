@@ -6,3 +6,6 @@
 Hexlet project
 
 Аскинема установки пакета [brain-games](https://asciinema.org/a/yXStCWdVpjKHVKVlpdLTtlA9R)
+Аскинема установки пакета [brain-even](https://asciinema.org/a/B4AQkhnEvdg9aUFE8ISgZhvGE)
+Аскинема установки пакета [brain-calc](https://asciinema.org/a/Xe2bKwbcIjuG37fJO5BCa5FQm)
+
