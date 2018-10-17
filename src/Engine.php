@@ -4,14 +4,14 @@ namespace BrainGames\Engine;
 use function \cli\line;
 use function \cli\prompt;
 
-function engine($rightAnswer, $questiom, $name)
+function engine($rightAnswer, $question, $name)
 {
     static $tries = 0;
     if ($tries >= 3) {
         return line("Congratulations, {$name}!");
     }
 
-    line('Question: ' . $questiom);
+    line('Question: ' . $question);
     $userAnswer = \cli\prompt('Your answer');
     if (isUserRight($userAnswer, $rightAnswer)) {
         line("Correct! \n");
@@ -27,5 +27,5 @@ function engine($rightAnswer, $questiom, $name)
 
 function isUserRight($userAnswer, $rightAnswer)
 {
-    return $userAnswer === $rightAnswer;
+    return $userAnswer == $rightAnswer;
 }

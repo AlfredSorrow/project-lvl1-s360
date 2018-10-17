@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+require __DIR__ . '/../vendor/autoload.php';
+use function \BrainGames\Cli\run;
+use function \BrainGames\Calculate\calculate;
+
+$gameDescription = 'What is the result of the expression?';
+$name = run($gameDescription);
+calculate($name);
