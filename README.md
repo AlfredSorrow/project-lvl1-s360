@@ -11,3 +11,6 @@ Hexlet project
 
 - Аскинема установки пакета [brain-calc](https://asciinema.org/a/Xe2bKwbcIjuG37fJO5BCa5FQm)
 
+- Аскинема установки пакета [brain-gcd](https://asciinema.org/a/S1UMoerXHYT0ISDOrzXOuew9h)
+
+
