@@ -25,7 +25,7 @@
             "src/Cli.php",
             "src/Engine.php",
             "src/games/Even.php",
-            "src/games/Cals.php"
+            "src/games/Calc.php"
         ]
     },
     "require": {

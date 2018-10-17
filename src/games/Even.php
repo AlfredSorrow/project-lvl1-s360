@@ -1,5 +1,6 @@
 <?php
 namespace BrainGames\Even;
+
 use function \cli\line;
 use function \cli\prompt;
 use function \BrainGames\Engine\engine;
@@ -20,7 +21,7 @@ function even($name)
     }
 
     $engineAnswer = engine($rightAnswer, $number, $name);
-    if ($engineAnswer !==true && $engineAnswer !== false ) {
+    if ($engineAnswer !==true && $engineAnswer !== false) {
         return;
     }
     even($name);
