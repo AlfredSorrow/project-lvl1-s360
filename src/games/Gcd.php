@@ -24,7 +24,7 @@ function gcd()
 
     engine(
         $name,
-        function() {
+        function () {
             $number1 = rand(0, 100);
             $number2 = rand(0, 100);
             $rightAnswer = getGcd($number1, $number2);

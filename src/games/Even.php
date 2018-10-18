@@ -15,7 +15,7 @@ function even()
     }
 
     engine(
-        $name, 
+        $name,
         function () {
 
             $question = rand(1, 50);

@@ -17,15 +17,15 @@ function calc()
             $number2 = rand(1, 20);
             $operator = OPERATORS[array_rand(OPERATORS)];
             switch ($operator) {
-            case '+':
-                $rightAnswer = $number1 + $number2;
-                break;
-            case '-':
-                $rightAnswer = $number1 - $number2;
-                break;
-            case '*':
-                $rightAnswer = $number1 * $number2;
-                break;
+                case '+':
+                    $rightAnswer = $number1 + $number2;
+                    break;
+                case '-':
+                    $rightAnswer = $number1 - $number2;
+                    break;
+                case '*':
+                    $rightAnswer = $number1 * $number2;
+                    break;
             }
             $question = "{$number1} {$operator} {$number2}";
 
