@@ -6,21 +6,25 @@ use function \cli\prompt;
 
 const TRIES = 3;
 
-function engine($name, callable $gameName)
-{
+function engine($gameDescription, callable $gameName)
+{   
+    line('Welcome to the Brain Games!');
+    line($gameDescripton . "\n");
+    $name = prompt('May I have your name?');
+    line("Hello, {$name}! \n");
     for ($i = 0; $i <= TRIES; $i++) {
         [$question, $rightAnswer] = $gameName();
         line('Question: ' . $question);
-        $userAnswer = \cli\prompt('Your answer');
+        $userAnswer = prompt('Your answer');
         if (isUserRight($userAnswer, $rightAnswer)) {
             line("Correct! \n");
         } else {
             line(" \n'{$userAnswer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
             line("Let's try again, {$name}! \n");
-            $i = 0;
+            return;
         }
     }
-    return line("Congratulations, {$name}!");
+    line("Congratulations, {$name}!");
 }
 
 function isUserRight($userAnswer, $rightAnswer)

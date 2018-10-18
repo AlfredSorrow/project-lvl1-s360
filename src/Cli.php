@@ -4,11 +4,9 @@ namespace BrainGames\Cli;
 use function \cli\line;
 use function \cli\prompt;
 
-function run($gameDescripton = '')
+function run()
 {
-    line('Welcome to the Brain Games!');
-    $gameDescripton === ''? line('') : line($gameDescripton . "\n");
+    line("Welcome to the Brain Games!\n");
     $name = \cli\prompt('May I have your name?');
     line("Hello, {$name}! \n");
-    return $name;
 }
