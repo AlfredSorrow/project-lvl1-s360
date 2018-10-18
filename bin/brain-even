@@ -7,9 +7,6 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use function \BrainGames\Cli\run;
 use function \BrainGames\even\even;
 
-$gameDescription = 'Answer "yes" if number even otherwise answer "no".';
-$name = run($gameDescription);
-even($name);
+even();

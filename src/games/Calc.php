@@ -2,31 +2,34 @@
 namespace BrainGames\Calc;
 
 use function \BrainGames\Engine\engine;
+use function \BrainGames\Cli\run;
 
-function operators()
+const DESCRIPTION = 'What is the result of the expression?';
+const OPERATORS = ['+', '-', '*'];
+
+function calc()
 {
-    $operator = ['+', '-', '*'];
-    return $operator[array_rand($operator)];
-}
+    $name = run(DESCRIPTION);
+    engine(
+        $name,
+        function () {
+            $number1 = rand(1, 20);
+            $number2 = rand(1, 20);
+            $operator = OPERATORS[array_rand(OPERATORS)];
+            switch ($operator) {
+            case '+':
+                $rightAnswer = $number1 + $number2;
+                break;
+            case '-':
+                $rightAnswer = $number1 - $number2;
+                break;
+            case '*':
+                $rightAnswer = $number1 * $number2;
+                break;
+            }
+            $question = "{$number1} {$operator} {$number2}";
 
-function calc($name)
-{
-
-    $number1 = rand(1, 20);
-    $number2 = rand(1, 20);
-    $operator = operators();
-    if ($operator === '+') {
-        $rightAnswer = $number1 + $number2;
-    } elseif ($operator === '-') {
-        $rightAnswer = $number1 - $number2;
-    } else {
-        $rightAnswer = $number1 * $number2;
-    }
-    $question = "{$number1} {$operator} {$number2}";
-
-    $engineAnswer = engine($rightAnswer, $question, $name);
-    if ($engineAnswer !==true && $engineAnswer !== false) {
-        return;
-    }
-    calc($name);
+            return [$question, $rightAnswer];
+        }
+    );
 }

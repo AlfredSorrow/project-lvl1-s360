@@ -4,25 +4,23 @@ namespace BrainGames\Engine;
 use function \cli\line;
 use function \cli\prompt;
 
-function engine($rightAnswer, $question, $name)
-{
-    static $tries = 0;
-    if ($tries >= 3) {
-        return line("Congratulations, {$name}!");
-    }
+const TRIES = 3;
 
-    line('Question: ' . $question);
-    $userAnswer = \cli\prompt('Your answer');
-    if (isUserRight($userAnswer, $rightAnswer)) {
-        line("Correct! \n");
-        $tries += 1;
-        return true;
-    } else {
-        line(" \n'{$userAnswer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
-        line("Let's try again, {$name}! \n");
-        $tries = 0;
-        return false;
+function engine($name, callable $gameName)
+{
+    for ($i = 0; $i <= TRIES; $i++) {
+        [$question, $rightAnswer] = $gameName();
+        line('Question: ' . $question);
+        $userAnswer = \cli\prompt('Your answer');
+        if (isUserRight($userAnswer, $rightAnswer)) {
+            line("Correct! \n");
+        } else {
+            line(" \n'{$userAnswer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
+            line("Let's try again, {$name}! \n");
+            $i = 0;
+        }
     }
+    return line("Congratulations, {$name}!");
 }
 
 function isUserRight($userAnswer, $rightAnswer)
