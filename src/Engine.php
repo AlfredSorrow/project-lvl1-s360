@@ -7,7 +7,7 @@ use function \cli\prompt;
 const TRIES = 3;
 
 function engine($gameDescription, callable $gameName)
-{   
+{
     line('Welcome to the Brain Games!');
     line($gameDescripton . "\n");
     $name = prompt('May I have your name?');
