@@ -2,25 +2,26 @@
 namespace BrainGames\Even;
 
 use function \BrainGames\Engine\engine;
+use function \BrainGames\Cli\run;
 
-function isEven($number)
+const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
+
+function even()
 {
-    return $number % 2 === 0;
-}
-
-function even($name)
-{
-
-    $number = rand(5, 45);
-    if (isEven($number)) {
-        $rightAnswer = 'yes';
-    } else {
-        $rightAnswer = 'no';
+    $name = run(DESCRIPTION);
+    function isEven($number)
+    {
+        return $number % 2 === 0;
     }
 
-    $engineAnswer = engine($rightAnswer, $number, $name);
-    if ($engineAnswer !==true && $engineAnswer !== false) {
-        return;
-    }
-    even($name);
+    engine(
+        $name, 
+        function () {
+
+            $question = rand(1, 50);
+            isEven($question) ? $rightAnswer = 'yes': $rightAnswer = 'no';
+        
+            return [$question, $rightAnswer];
+        }
+    );
 }
