@@ -2,7 +2,6 @@
 namespace BrainGames\Even;
 
 use function \BrainGames\Engine\engine;
-use function \BrainGames\Cli\run;
 
 const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 

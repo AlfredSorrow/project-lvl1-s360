@@ -2,7 +2,6 @@
 namespace BrainGames\Calc;
 
 use function \BrainGames\Engine\engine;
-use function \BrainGames\Cli\run;
 
 const DESCRIPTION = 'What is the result of the expression?';
 const OPERATORS = ['+', '-', '*'];
