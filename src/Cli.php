@@ -7,6 +7,6 @@ use function \cli\prompt;
 function run()
 {
     line("Welcome to the Brain Games!\n");
-    $name = \cli\prompt('May I have your name?');
+    $name = prompt('May I have your name?');
     line("Hello, {$name}! \n");
 }

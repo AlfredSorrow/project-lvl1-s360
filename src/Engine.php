@@ -9,11 +9,12 @@ const TRIES = 3;
 function engine($gameDescription, callable $gameName)
 {
     line('Welcome to the Brain Games!');
-    line($gameDescripton . "\n");
+    line($gameDescription . "\n");
     $name = prompt('May I have your name?');
     line("Hello, {$name}! \n");
-    for ($i = 0; $i <= TRIES; $i++) {
+    for ($i = 0; $i < TRIES; $i++) {
         [$question, $rightAnswer] = $gameName();
+        $rightAnswer = "{$rightAnswer}";
         line('Question: ' . $question);
         $userAnswer = prompt('Your answer');
         if (isUserRight($userAnswer, $rightAnswer)) {
@@ -29,5 +30,5 @@ function engine($gameDescription, callable $gameName)
 
 function isUserRight($userAnswer, $rightAnswer)
 {
-    return $userAnswer == $rightAnswer;
+    return $userAnswer === $rightAnswer;
 }
