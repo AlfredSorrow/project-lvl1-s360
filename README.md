@@ -13,8 +13,9 @@ Hexlet project
 
 - Аскинема установки пакета [brain-gcd](https://asciinema.org/a/S1UMoerXHYT0ISDOrzXOuew9h)
 
+- Аскинема установки пакета [brain-balance](https://asciinema.org/a/TitieBcL0u7yaL1w3GIHaSEbN)
+
 - Аскинема установки пакета [brain-progression](https://asciinema.org/a/9VjqMGUYlOKl7PNWnRi0lnwOd)
 
-
-
+- Аскинема установки пакета [brain-prime](https://asciinema.org/a/4Nb2ZOOWcNeX3rtInGYruVPVP)
 
