@@ -10,10 +10,7 @@ function balance()
     $balanceGame = function () {
         $question = rand(1000, 10000);
         $arrayOfquestion = str_split($question);
-        $summOfDigits = 0;
-        foreach ($arrayOfquestion as $digit) {
-            $summOfDigits += $digit;
-        }
+        $summOfDigits = array_sum($arrayOfquestion);
         $quantityOfDigits = sizeOf($arrayOfquestion);
         $rightAnswerArray = getDigitsOfBalancedNumber($summOfDigits, $quantityOfDigits, $acc = []);
         $rightAnswer = implode($rightAnswerArray);
