@@ -3,7 +3,7 @@ namespace BrainGames\Balance;
 
 use function \BrainGames\Engine\engine;
 
-const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
+const DESCRIPTION = 'Balance the given number.';
 
 function balance()
 {
