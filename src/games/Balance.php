@@ -22,7 +22,8 @@ function balance()
 
 function getDigitsOfBalancedNumber($summOfDigits, $quantityOfDigits, $acc)
 {
-    if ($summOfDigits == 0) {
+    if ($quantityOfDigits === 1) {
+        $acc[] = $summOfDigits; 
         return $acc;
     }
     $digit = floor($summOfDigits / $quantityOfDigits);
