@@ -2,8 +2,7 @@
 <a href="https://codeclimate.com/github/AlfredSorrow/project-lvl1-s360/test_coverage"><img src="https://api.codeclimate.com/v1/badges/58bfe3c350249009a56d/test_coverage" /></a>
 [![Build Status](https://travis-ci.org/AlfredSorrow/project-lvl1-s360.svg?branch=master)](https://travis-ci.org/AlfredSorrow/project-lvl1-s360)
 
-# project-lvl1-s360
-Hexlet project
+# First Hexlet project
 
 - Аскинема установки пакета [brain-games](https://asciinema.org/a/yXStCWdVpjKHVKVlpdLTtlA9R)
 
