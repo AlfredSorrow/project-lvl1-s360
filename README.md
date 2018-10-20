@@ -18,3 +18,7 @@
 
 - Аскинема установки пакета [brain-prime](https://asciinema.org/a/4Nb2ZOOWcNeX3rtInGYruVPVP)
 
+# How to install: 
+
+``` composer global require alfredsorrow/brain-games ```
+
