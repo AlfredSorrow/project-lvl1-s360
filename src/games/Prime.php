@@ -9,7 +9,7 @@ function prime()
 {
     $primeGame = function () {
         $question = getNumber();
-        isPrime($question) ?  $rightAnswer = 'yes' : $rightAnswer = 'no';
+        $rightAnswer = isPrime($question) ? 'yes' : 'no';
         return [$question, $rightAnswer];
     };
 
@@ -18,6 +18,9 @@ function prime()
 
 function isPrime($number)
 {
+    if ($number === 1){
+        return false;
+    }
     for ($i = 2; $i < sqrt($number); $i++) {
         if ($number % $i === 0) {
             return false;

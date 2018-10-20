@@ -4,7 +4,7 @@ namespace BrainGames\Progression;
 use function \BrainGames\Engine\engine;
 
 const DESCRIPTION = 'What number is missing in this progression?';
-const MEMBERSOFPROGRESSION = 10;
+const MEMBERS_OF_PROGRESSION = 10;
 
 function progression()
 {
@@ -12,9 +12,9 @@ function progression()
         $firstNumber = rand(1, 100);
         $commonDifference = rand(1, 100);
         $arrayOfProgression = getArrayOfProgression($firstNumber, $commonDifference);
-        $key = rand(0, MEMBERSOFPROGRESSION);
-        $rightAnswer = $arrayOfProgression[$key];
-        $arrayOfProgression[$key] = '..';
+        $hiddenElementPosition = rand(0, MEMBERS_OF_PROGRESSION);
+        $rightAnswer = $arrayOfProgression[$hiddenElementPosition];
+        $arrayOfProgression[$hiddenElementPosition] = '..';
         $question = implode(' ', $arrayOfProgression);
         return [$question, $rightAnswer];
     };
@@ -24,7 +24,7 @@ function progression()
 
 function getArrayOfProgression($firstNumber, $commonDifference)
 {
-    for ($i = 1; $i <= MEMBERSOFPROGRESSION; $i++) {
+    for ($i = 1; $i <= MEMBERS_OF_PROGRESSION; $i++) {
         $arrayOfProgression[] = $firstNumber + $commonDifference * $i;
     }
     return $arrayOfProgression;
